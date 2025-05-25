@@ -31,7 +31,7 @@ jobs:
         python -c "from extract import fetch_data; from transform import transform_data; from load import save_to_csv; save_to_csv(transform_data(fetch_data()))"
         
     - name: Upload output CSV
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v3.1.0
       with:
         name: etl-output
         path: output_*.csv
