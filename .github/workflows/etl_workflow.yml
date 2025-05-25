@@ -18,7 +18,7 @@ jobs:
         python-version: '3.10'
 
     - name: Install dependencies
-      run:  pip install -r requiremnts.txt
+      run:  pip install -r requiremnts.txt && pip install --upgrade numpy pandas
 
     - name: Run validations
       run: python test.py
