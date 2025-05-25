@@ -28,7 +28,7 @@ jobs:
         
     - name: Run ETL pipeline
       run: |
-        python -c "from extract import fetch_data; from transform import transform_data; from load import save_to_csv; save_to_csv(transform_data(fetch_data()))"
+        python load.py
         
     - name: Upload output CSV
       uses: actions/upload-artifact@v3.1.0
