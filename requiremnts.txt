@@ -1,2 +1,4 @@
 pandas==2.1.0
-requests==2.32.3
+python-dotenv==1.0.0
+pytest=2.2.1
+requests=2.32.3
